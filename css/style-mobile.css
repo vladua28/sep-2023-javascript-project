@@ -1,0 +1,16 @@
+@media screen and (min-width: 641px) and ( max-width: 1007px) {
+    .blocks {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 640px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .blocks {
+        grid-template-columns: 1fr;
+    }
+}
+

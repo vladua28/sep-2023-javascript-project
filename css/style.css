@@ -1,0 +1,232 @@
+/*                  Reset CSS                  */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a, a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+img {
+    vertical-align: top;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    font-size: 14px;
+}
+
+button, input, textarea, select, a {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    line-height: inherit;
+    background-color: inherit;
+}
+
+body {
+    line-height: 1;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+/*                  Reset CSS                  */
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    background-color: #6200EE;
+    color: white;
+    padding: 20px;
+}
+
+h2, h3, p {
+    margin-bottom: 5px;
+    line-height: 1.3;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+h3 {
+    font-size: 14px;
+}
+
+main {
+    padding: 0 15%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.info {
+    margin: 0 0 20px 5%;
+    padding-left: 10px;
+    border-left: 1px solid #ccc;
+}
+
+.child-info {
+    margin: 0 0 10px 30px;
+    padding-left: 10px;
+    border-left: 1px solid #ddd;
+}
+
+.blocks {
+    display: grid;
+    grid-gap: 30px;
+    padding: 20px 5%;
+}
+
+.posts {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.comments {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.block {
+    background-color: #e0e0e0;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.user {
+    margin: 0 auto 15px;
+}
+
+/*                  BUTTONS                 */
+button {
+    width: 100%;
+    height: 100%;
+    font-weight: 700;
+    color: white;
+    background-color: #2e93ef;
+    border: 1px solid #1877F2;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1877F2;
+}
+
+.btn {
+    font-size: 14px;
+    height: 25px;
+    width: 250px;
+    margin: 10px auto;
+}
+
+.post .btn {
+    width: 80%;
+}
+
+.button {
+    font-size: 16px;
+    height: 30px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/*                  ICONS                 */
+
+.info > li::before {
+    content: '';
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 24px;
+    height: 24px;
+}
+
+.user-info > li:first-child::before {
+    background-image: url(../img/folder_shared_24px_outlined.png);
+}
+
+.user-info > li:nth-child(2)::before {
+    background-image: url(../img/person_24px_outlined.png);
+}
+
+.user-info > li:nth-child(3)::before {
+    background-image: url(../img/account_circle_24px_outlined.png);
+}
+
+.user-info > li:nth-child(4)::before {
+    background-image: url(../img/markunread_24px_outlined.png);
+}
+
+.user-info > li:nth-child(5)::before {
+    background-image: url(../img/24px_outlined.png);
+}
+
+.user-info > li:nth-child(6)::before {
+    background-image: url(../img/phone_in_talk_24px_outlined.png);
+}
+
+.user-info > li:nth-child(7)::before {
+    background-image: url(../img/phonelink_24px_outlined.png);
+}
+
+.user-info > li:last-child::before {
+    background-image: url(../img/group_24px_outlined.png);
+}
+
+.child-info > li:nth-child(5)::before {
+    content: '';
+    background-image: url(../img/location_on_24px_outlined.png);
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 24px;
+    height: 24px;
+}
+
+.post-info > li:first-child::before {
+    background-image: url(../img/folder_shared_24px_outlined.png);
+}
+
+.post-info > li:nth-child(2)::before {
+    background-image: url(../img/list_alt_24px_outlined.png);
+}
+
+.post-info > li:nth-child(3)::before {
+    background-image: url(../img/featured_play_list_24px_outlined.png);
+}
+
+.post-info > li:nth-child(4)::before {
+    background-image: url(../img/insert_comment_24px_outlined.png);
+}
